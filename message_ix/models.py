@@ -169,6 +169,8 @@ MESSAGE_ITEMS = {
     "commodity_stock": item("par", "n c l y"),
     "construction_time": item("par", "nl t yv"),
     "demand": item("par", "n c l y h"),
+    "df_year": item("par", "y"),
+    "df_period": item("par", "y"),
     "duration_period": dict(ix_type="par", idx_sets=["year"]),
     "duration_time": dict(ix_type="par", idx_sets=["time"]),
     "dynamic_land_lo": item("par", "n land_scenario y land_type"),
@@ -219,6 +221,7 @@ MESSAGE_ITEMS = {
     "level_cost_activity_soft_up": item("par", "nl t ya h"),
     "level_cost_new_capacity_soft_lo": item("par", "nl t yv"),
     "level_cost_new_capacity_soft_up": item("par", "nl t yv"),
+    "levelized_cost": item("par", "n t y h"),
     "min_utilization_factor": item("par", "nl t yv ya"),
     "operation_factor": item("par", "nl t yv ya"),
     "output": item("par", "nl t yv ya m nd c l h hd"),
@@ -294,6 +297,7 @@ MESSAGE_ITEMS = {
     # # Equations
     # # Commodity balance
     # "RESOURCE_HORIZON": item("equ", "n c g"),
+    "EMISSION_EQUIVALENCE": item("equ", "n e type_tec y"),
 }
 
 
