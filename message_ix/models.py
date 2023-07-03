@@ -291,6 +291,7 @@ MESSAGE_ITEMS = {
     # # Stock
     # "STOCK": item("var", "n c l y"),
     #
+    "PRICE_EMISSION_NEW": item("var", "n type_emission type_tec y"),
     "STORAGE": item("var", "n t m l c y h"),
     "STORAGE_CHARGE": item("var", "n t m l c y h"),
     #
