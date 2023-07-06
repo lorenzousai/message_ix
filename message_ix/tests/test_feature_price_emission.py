@@ -56,13 +56,20 @@ def add_many_tecs(scen, years, n=50):
     """add a range of dirty-to-clean technologies to the scenario"""
     output_specs = ["node", "comm", "level", "year", "year"]
     
-    # tec: [emissions, var_cost, bound_activity_up]
+    # tec: [emission_factor, var_cost, bound_activity_up]
     tecs = {
         "tec1": [10, 5, 1],
         "tec2": [-1, 10, 0.4],
         "tec3": [-5, 200, 0.3],
         "tec4": [-15, 1200, 0.2],
         "tec5": [-50, 6000, 0.1],
+    }
+    tecs = {
+        "tec1": [10, 5, 1],
+        "tec2": [-10, 10, 0.4],
+        "tec3": [-12, 20, 0.3],
+        "tec4": [-14, 30, 0.2],
+        "tec5": [-16, 40, 0.1],
     }
 
     for t in tecs:
