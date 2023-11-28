@@ -19,6 +19,8 @@ DEFAULT_CPLEX_OPTIONS = {
     "lpmethod": 4,
     "threads": 4,
     "epopt": 1e-6,
+    'scaind': -1, 
+    'barcrossalg': 1,
 }
 
 # Abbreviations for index sets and index names; the same used in the inline
